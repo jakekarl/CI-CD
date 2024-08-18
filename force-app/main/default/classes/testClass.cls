@@ -5,7 +5,7 @@ public with sharing class testClass {
 
 
 
+            System.debug('formatting test');
 
-    
   }
 }

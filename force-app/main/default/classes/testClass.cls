@@ -4,6 +4,6 @@ public with sharing class testClass {
 
 		System.debug('formatting test');
 
-		System.debug('should not run GH action');
+					System.debug('should not run GH action');
 	}
 }

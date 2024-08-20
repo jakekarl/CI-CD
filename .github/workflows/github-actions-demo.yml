@@ -17,25 +17,13 @@
 #           ls ${{ github.workspace }}
 #       - run: echo "🍏 This job's status is ${{ job.status }}."
 
-
 name: Format
 on:
-  pull_request:
-    branches: [main]
+    pull_request:
+        # branches: [main]
 jobs:
-  format:
+  GitHub-Job-1:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "18.x"
-      - run: npm ci
-      - run: npm run prettier
-      # - name: Commit changes
-      #   uses: stefanzweifel/git-auto-commit-action@v4.1.2
-      #   with:
-      #     commit_message: Apply formatting changes
-      #     branch: ${{ github.head_ref }}
+      - run: echo "Run step 1"
+      - run: echo "Run step 2"

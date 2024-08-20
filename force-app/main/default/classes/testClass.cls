@@ -7,5 +7,24 @@ public with sharing class testClass {
 		System.debug('should not run GH action');
 
 		System.debug('adding more lines');
+														System.debug('adding more lines'
+														
+														
+														
+														
+														
+														);
+
+
+
+														
+
+// !!!!! lots of formatting
+
+System.debug('does stuff '
+
+
+
+							);
 	}
 }

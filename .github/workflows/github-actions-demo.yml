@@ -14,9 +14,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
-        with:
-          token: '${{ secrets.GITHUB_TOKEN }}'
+      # - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+      #   with:
+      #     token: '${{ secrets.WORKFLOW_TOKEN }}'
 
       - uses: actions/setup-node@v4
         with:
@@ -24,9 +24,9 @@ jobs:
       - run: npm ci
       - run: npm run prettier
 
-      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
-        with:
-            token: ${{ secrets.WORKFLOW_TOKEN }}
+      # - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+      #   with:
+      #       token: ${{ secrets.WORKFLOW_TOKEN }}
             
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5

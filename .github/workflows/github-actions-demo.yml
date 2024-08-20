@@ -56,4 +56,4 @@ jobs:
       - name: Install dependencies
         run: npm install -D
       - name: Check formatting with Prettier
-        run: npm prettier:verify
+        run: npm run prettier:verify

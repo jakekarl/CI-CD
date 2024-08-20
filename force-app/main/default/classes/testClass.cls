@@ -4,14 +4,8 @@ public with sharing class testClass {
 
 		System.debug('formatting test');
 
-					System.debug('should not run GH action');
+		System.debug('should not run GH action');
 
-														System.debug('adding more lines'
-														
-														
-														
-														
-														
-														);
+		System.debug('adding more lines');
 	}
 }
